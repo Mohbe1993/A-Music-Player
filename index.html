@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>A Music Player</title>
+  </head>
+  <body>
+    <div class="cont">
+      <div class="player">
+        <nav>
+          <div class="circle"><i class="fa-solid fa-angle-left"></i></div>
+          <div class="circle"><i class="fa-solid fa-bars"></i></div>
+        </nav>
+        <img class="sImg" src="media/Screenshot 2024-09-24 121328.png" />
+
+        <h1>Song 1</h1>
+        <p>Name</p>
+
+        <audio id="song">
+          <source src="media/Untitled video - Made with Clipchamp (1).mp4" />
+          <source src="media/Untitled video - Made with Clipchamp.mp4" />
+        </audio>
+        <input type="range" id="Prog" min="0" value="0" step="0.01" />
+
+        <div class="contr">
+          <div onclick="perv()"><i class="fa-solid fa-backward"></i></div>
+          <div onclick="playPause()">
+            <i class="fa-solid fa-play" id="crtI"></i>
+          </div>
+          <div onclick="next()"><i class="fa-solid fa-forward"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
